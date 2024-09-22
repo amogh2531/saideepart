@@ -16,10 +16,11 @@ export default function Header() {
 			w='100%'
 			top='0'
 			pos='fixed'
-            bgColor='whiteAlpha.800'
+            bgColor='white'
 			zIndex='20'
             boxShadow='md'
-            borderColor="gray.200" >
+            borderColor="gray.200"
+             >
 
             <Box display='flex' justifyContent='space-evenly' alignItems='center' >
             {/*Logo*/}
@@ -53,11 +54,11 @@ export default function Header() {
 
             <Box display='flex' justifyContent='space-between' alignItems='center'  >
 
-                <Tooltip hasArrow label="Search" aria-label='A tooltip' bg='black' borderRadius='5px' >
+                {/* <Tooltip hasArrow label="Search" aria-label='A tooltip' bg='black' borderRadius='5px' >
                     <Link  fontWeight='800' fontSize='x-large'  textDecoration='none' _hover={{textDecor: 'none', color: 'gray.500'}}>
                     <Icon as={IoSearch} mr='3' ml='2'></Icon>
                     </Link>
-                </Tooltip>
+                </Tooltip> */}
 
                 <Tooltip hasArrow label="Account" aria-label='A tooltip' bg='black' borderRadius='5px'  >
                     <Link  as={RouterLink} to="/signup" fontWeight='800' fontSize='x-large' textDecoration='none' _hover={{textDecor: 'none', color: 'gray.500'}}>
@@ -65,7 +66,7 @@ export default function Header() {
                     </Link>
                 </Tooltip>
 
-                <Tooltip hasArrow label="Wishlist" aria-label='A tooltip' bg='black' borderRadius='5px' >
+                {/* <Tooltip hasArrow label="Wishlist" aria-label='A tooltip' bg='black' borderRadius='5px' >
                     <Link as={RouterLink} to="/wishlist" fontWeight='900' fontSize='x-large'  _hover={{textDecor: 'none', color: 'gray.500'}}>
                     <Icon as={FaRegHeart} mr='3' ml='2'></Icon>
                     </Link>
@@ -75,7 +76,7 @@ export default function Header() {
                     <Link  as={RouterLink} to="/cart" fontWeight='800' fontSize='x-large'  textDecoration='none' _hover={{textDecor: 'none', color: 'gray.500'}}>
                     <Icon as={IoBagOutline} mr='3' ml='2' ></Icon>
                     </Link>
-                </Tooltip>
+                </Tooltip> */}
 
             </Box>
 

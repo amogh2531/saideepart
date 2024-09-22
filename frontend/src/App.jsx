@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Homescreen from './Screens/Homescreen'
+import { Categaries } from './Screens/Categaries'
+import { Courses } from './Screens/Courses'
+import Homescree from './Screens/Homescree'
 
 function App() {
   
@@ -12,11 +15,12 @@ function App() {
        <Header/>
           <Routes>
             <Route path='/' element={<Homescreen/>}/>
+            {/* <Route path='/' element={<Homescree/>}/> */}
             <Route path='/cart' element={<Homescreen/>}/>
             <Route path='/signup' element={<Homescreen/>}/>
             <Route path='/wishlist' element={<Homescreen/>}/>
-            <Route path='/categaries' element={<Homescreen/>}/>
-            <Route path='/courses' element={<Homescreen/>}/>
+            <Route path='/categaries' element={<Categaries/>}/>
+            <Route path='/courses' element={<Courses/>}/>
           </Routes>      
        <Footer/>
        </BrowserRouter>
