@@ -1,6 +1,6 @@
  
  
-export  const categories = [
+export const categories = [
     {
         id: 1,
         name: "Fluid Art",

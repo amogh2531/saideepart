@@ -1,6 +1,6 @@
 
 
- const courses = [
+export const courses = [
     {
       id: 1,
       name: "Fluid Art Course",
@@ -75,4 +75,4 @@
     },
   ]
   
-  export default courses
+  export default courses;

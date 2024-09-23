@@ -1,6 +1,7 @@
 
 import { applyMiddleware, combineReducers, createStore} from "redux";
 import { courseReducer, courseDetailsReducer} from "./reducers/CoursesReducer";
+import {categoriesReducer} from "./reducers/CategoriesReducer"
 import {thunk} from "redux-thunk"
 
 
@@ -13,6 +14,7 @@ const initialState = {
 const reducers = combineReducers({
     courses: courseReducer,
     courseDetails : courseDetailsReducer,
+    categories : categoriesReducer,
 });
 
 const store = createStore(

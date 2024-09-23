@@ -13,7 +13,7 @@ import { listCourseDetails } from "../actions/CoursesActions";
 
     const url = "https://forms.gle/KYAMtDK1RtD8cFxi7"
 
-    const course = useSelector((state) => state.courseDetails.course );
+    const {loading, error, course} = useSelector((state) => state.courseDetails || {} );
     
     
 
