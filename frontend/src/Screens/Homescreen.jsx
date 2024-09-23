@@ -9,6 +9,7 @@ import {
     Card,
     CardBody,
     Stack,
+    Divider,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { products } from "../Data/product";
@@ -38,10 +39,10 @@ const Homescreen = () => {
         <Flex
             flexDirection='column'
             justifyContent='center'
-            align='center'
+            alignItems='center'
             mt='85px'
             w='100%'
-            mx='1rem'
+            bgGradient='linear(gray.200 0%, gray.400 25%, gray.500 50%)'
         >
             <Box
                 backgroundImage={`url(${product.imageUrl})`}
@@ -50,6 +51,7 @@ const Homescreen = () => {
                 backgroundRepeat='no-repeat'
                 margin='1rem'
                 rounded='20px'
+                borderRadius='10px'
                 padding='3px'
                 width='80%'
                 height='80vh'
@@ -69,10 +71,10 @@ const Homescreen = () => {
                     {product.description}
                 </Text>
             </Box>
-
+            <Divider/>
             <Box margin='1rem' width='90%' height='30rem' >
                 <Box  rounded='10px' height='full' padding='3px'>
-                    <Heading fontSize='xx-large' mb='2' textAlign='center'>About</Heading>
+                    <Heading fontSize='xx-large' mb='2' textAlign='center'>About us</Heading>
                     <Text textAlign='justify'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit consectetur tempora ad atque sapiente dignissimos, laborum hic amet accusamus, et ut error quasi consequuntur harum iure adipisci, soluta ducimus reiciendis!
                     Eligendi sed pariatur labore aperiam a maxime at eos, perferendis deserunt fugit velit voluptas quae, voluptatem ipsum blanditiis voluptatibus, suscipit dolores inventore. Hic consectetur asperiores nam fugit commodi incidunt reiciendis?
                     Eos, quos reprehenderit quae vel voluptas debitis a? Nisi suscipit quae soluta eos veritatis expedita accusamus deserunt ipsam temporibus, dolores iure itaque voluptate reiciendis facilis ab laudantium, nulla nihil. Debitis.
@@ -86,18 +88,18 @@ const Homescreen = () => {
                     Dolor rerum in error tenetur quae fugiat. Perspiciatis quos fuga fugit dolore distinctio, laudantium sequi dolor? Rerum </Text>
                 </Box>
             </Box>
-
-            <Box margin='1rem' padding='2px' width='100%' textAlign='start' pb='4' mb='4'>
-                <Heading fontSize='xx-large' textAlign='center' mb='2' pb='2'>
+            <Divider/>
+            <Box margin='1rem' padding='2px' width='100%' textAlign='start' pb='4' mb='4' mt='2'>
+                <Heading fontSize='xx-large' textAlign='center' mb='4' pb='4' mt='4'>
                     Art Categories We Deal With..
                 </Heading>
                 <Flex flexWrap='wrap' mb='5' justifyContent='center' alignItems='center'>
                     {categories.map((item, index) => (
-                        <Card key={index} maxW='sm' spacing='3' mr='3' mb='3' backgroundColor='gray.200'>
+                        <Card key={index} maxW='sm' spacing='5' mr='5' mb='7' backgroundColor='gray.200'>
                             <CardBody>
                                 <Image src="/images/img1.jpg" borderRadius='lg' />
                                 <Stack>
-                                    <Heading fontSize='md'>{item}</Heading>
+                                    <Heading fontSize='md' mt='2' textAlign='center' p='2'>{item}</Heading>
                                     <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam asperiores nemo numquam incidunt corporis ex aspernatur eos, nostrum dolore voluptas. Fugiat maxime, quidem quod commodi ad sequi assumenda porro nostrum!</Text>
                                 </Stack>
                             </CardBody>
@@ -105,8 +107,9 @@ const Homescreen = () => {
                     ))}
                 </Flex>
             </Box>
+            <Divider/>
             <Box margin='1rem' padding='3px' width='100%' textAlign='start' pb='4' mb='4'>
-                <Heading fontSize='xx-large' textAlign='center' mb='3' pb='2'>
+                <Heading fontSize='xx-large' textAlign='center' mb='4' pb='4' mt='4'>
                    Courses we offer..
                 </Heading>
                 <Flex flexWrap='wrap' mb='5' justifyContent='center' alignItems='center'>
@@ -115,7 +118,7 @@ const Homescreen = () => {
                             <CardBody>
                                 <Image src="/images/img1.jpg" borderRadius='lg' />
                                 <Stack>
-                                    <Heading fontSize='md'>{item}</Heading>
+                                    <Heading fontSize='md' mt='2' textAlign='center' p='2'>{item}</Heading>
                                     <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam asperiores nemo numquam incidunt corporis ex aspernatur eos, nostrum dolore voluptas. Fugiat maxime, quidem quod commodi ad sequi assumenda porro nostrum!</Text>
                                 </Stack>
                             </CardBody>

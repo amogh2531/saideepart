@@ -11,15 +11,16 @@ export default function Header() {
 			align='center'
 			justifyContent='space-between'
 			wrap='wrap'
-			py='4'
+			py='5'
 			px='5'
 			w='100%'
 			top='0'
 			pos='fixed'
-            bgColor='white'
+            bgColor='gray.200'
 			zIndex='20'
-            boxShadow='md'
-            borderColor="gray.200"
+            borderRadius="0 0 15px 15px"
+            
+            // bgGradient='linear(gray.200 0%, gray.400 25%, gray.500 50%)'
              >
 
             <Box display='flex' justifyContent='space-evenly' alignItems='center' >

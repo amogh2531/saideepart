@@ -1,0 +1,2 @@
+export const SET_COURSES = "SET_COURSES";
+export const SET_COURSE_DETAILS = "SET_COURSE_DETAILS"

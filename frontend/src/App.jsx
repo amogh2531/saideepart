@@ -5,7 +5,7 @@ import Homescreen from './Screens/Homescreen'
 import  Categories  from './Screens/Categories'
 import  Courses  from './Screens/Courses'
 import CoursePage from './Screens/CoursePage'
-// import Homescree from './Screens/Homescree'
+
 
 function App() {
   
@@ -16,7 +16,6 @@ function App() {
        <Header/>
           <Routes>
             <Route path='/' element={<Homescreen/>}/>
-            {/* <Route path='/' element={<Homescree/>}/> */}
             <Route path='/cart' element={<Homescreen/>}/>
             <Route path='/signup' element={<Homescreen/>}/>
             <Route path='/wishlist' element={<Homescreen/>}/>
