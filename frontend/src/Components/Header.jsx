@@ -11,7 +11,7 @@ export default function Header() {
 			align='center'
 			justifyContent='space-between'
 			wrap='wrap'
-			py='3'
+			py='4'
 			px='5'
 			w='100%'
 			top='0'
@@ -60,11 +60,11 @@ export default function Header() {
                     </Link>
                 </Tooltip> */}
 
-                <Tooltip hasArrow label="Account" aria-label='A tooltip' bg='black' borderRadius='5px'  >
+                {/* <Tooltip hasArrow label="Account" aria-label='A tooltip' bg='black' borderRadius='5px'  >
                     <Link  as={RouterLink} to="/signup" fontWeight='800' fontSize='x-large' textDecoration='none' _hover={{textDecor: 'none', color: 'gray.500'}}>
                     <Icon as={FaRegUser} mr='3' ml='2'></Icon>
                     </Link>
-                </Tooltip>
+                </Tooltip> */}
 
                 {/* <Tooltip hasArrow label="Wishlist" aria-label='A tooltip' bg='black' borderRadius='5px' >
                     <Link as={RouterLink} to="/wishlist" fontWeight='900' fontSize='x-large'  _hover={{textDecor: 'none', color: 'gray.500'}}>

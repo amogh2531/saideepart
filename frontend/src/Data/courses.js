@@ -1,27 +1,78 @@
-export const courses = [
-    {
-        id: 1,
-        name: "Fluid Art",
-        description: "Learn the techniques of fluid art using acrylic pouring methods to create stunning pieces.",
-        imageUrl: "/images/fluid-art-course.jpg"
-    },
-    {
-        id: 2,
-        name: "Resin Art",
-        description: "Discover how to create beautiful resin art pieces with various materials and techniques.",
-        imageUrl: "/images/resin-art-course.jpg"
-    },
-    {
-        id: 3,
-        name: "Abstract Painting",
-        description: "Explore the world of abstract painting and express yourself through colors and forms.",
-        imageUrl: "/images/abstract-painting-course.jpg"
-    },
-    {
-        id: 4,
-        name: "Mithai Candle Making",
-        description: "Join our workshop to learn how to craft stunning Mithai candles with unique designs.",
-        imageUrl: "/images/mithai-candle-course.jpg" 
-    },
-];
 
+
+ const courses = [
+    {
+      id: 1,
+      name: "Fluid Art Course",
+      description: "Learn the vibrant techniques of acrylic pouring to create stunning abstract designs. This hands-on course covers color mixing and layering, perfect for artists of all levels. You'll leave with unique artwork and newfound confidence.",
+      duration: "4 weeks (2 hours per week)",
+      price: "₹9,600",
+      format: "Online/Offline",
+      materialsIncluded: "Paints, canvases, pouring medium",
+    },
+    {
+      id: 2,
+      name: "Resin Art Course",
+      description: "Master the art of resin in this engaging course. Participants will learn to mix, color, and pour epoxy resin to create beautiful pieces like coasters and jewelry. Emphasis is on safety and various creative techniques.",
+      duration: "3 weeks (3 hours per week)",
+      price: "₹12,000",
+      format: "Online only",
+      materialsIncluded: "Resin, pigments, molds, safety equipment",
+    },
+    {
+      id: 3,
+      name: "Abstract Painting Course",
+      description: "Unleash your creativity with abstract painting techniques that focus on color, shape, and form. This course guides you through projects to develop your artistic voice, suitable for all skill levels.",
+      duration: "5 weeks (2 hours per week)",
+      price: "₹11,200",
+      format: "Offline only",
+      materialsIncluded: "Paints, brushes, canvases",
+    },
+    {
+      id: 4,
+      name: "Alcohol Ink Painting Course",
+      description: "Explore the dynamic medium of alcohol ink painting. Learn to create fluid designs on various surfaces while mastering blending techniques. This course offers endless possibilities for creative expression.",
+      duration: "2 weeks (2.5 hours per week)",
+      price: "₹7,200",
+      format: "Online/Offline",
+      materialsIncluded: "Alcohol inks, Yupo paper, blending tools",
+    },
+    {
+      id: 5,
+      name: "Wall Painting Course",
+      description: "This unique course teaches large-scale mural techniques for both indoor and outdoor settings. Covering planning and execution, you'll learn how to bring your creative visions to life through mural art.",
+      duration: "6 weeks (3 hours per week)",
+      price: "₹16,000",
+      format: "Offline only",
+      materialsIncluded: "Paints, brushes, tools",
+    },
+    {
+      id: 6,
+      name: "Mithai Candle Making Course",
+      description: "Discover the art of candle making inspired by traditional Indian sweets. Participants will create unique candles while learning about wax selection, coloring, and scenting, perfect for home decor.",
+      duration: "3 weeks (2 hours per week)",
+      price: "₹6,400",
+      format: "Online only",
+      materialsIncluded: "Wax, wicks, molds, fragrances",
+    },
+    {
+      id: 7,
+      name: "Watercolor Painting Course",
+      description: "Learn essential watercolor techniques in this introductory course. Participants will explore methods like wet-on-wet and layering to create beautiful effects while developing a personal artistic style.",
+      duration: "4 weeks (2 hours per week)",
+      price: "₹8,800",
+      format: "Online/Offline",
+      materialsIncluded: "Watercolor paints, brushes, watercolor paper",
+    },
+    {
+      id: 8,
+      name: "Digital Art Course",
+      description: "Delve into digital art using modern tools and software. This course covers drawing techniques and color application, helping aspiring artists create illustrations and animations in a digital format.",
+      duration: "5 weeks (2.5 hours per week)",
+      price: "₹13,000",
+      format: "Online only",
+      materialsIncluded: "Access to software tutorials and resources",
+    },
+  ]
+  
+  export default courses

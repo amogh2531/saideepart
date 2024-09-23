@@ -3,8 +3,9 @@ import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Homescreen from './Screens/Homescreen'
 import  Categories  from './Screens/Categories'
-import { Courses } from './Screens/Courses'
-import Homescree from './Screens/Homescree'
+import  Courses  from './Screens/Courses'
+import CoursePage from './Screens/CoursePage'
+// import Homescree from './Screens/Homescree'
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
             <Route path='/wishlist' element={<Homescreen/>}/>
             <Route path='/categaries' element={<Categories/>}/>
             <Route path='/courses' element={<Courses/>}/>
+            <Route path='/courses/:id' element={<CoursePage/>}/>
           </Routes>      
        <Footer/>
        </BrowserRouter>
