@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Homescreen from './Screens/Homescreen'
-import { Categaries } from './Screens/Categaries'
+import  Categories  from './Screens/Categories'
 import { Courses } from './Screens/Courses'
 import Homescree from './Screens/Homescree'
 
@@ -19,7 +19,7 @@ function App() {
             <Route path='/cart' element={<Homescreen/>}/>
             <Route path='/signup' element={<Homescreen/>}/>
             <Route path='/wishlist' element={<Homescreen/>}/>
-            <Route path='/categaries' element={<Categaries/>}/>
+            <Route path='/categaries' element={<Categories/>}/>
             <Route path='/courses' element={<Courses/>}/>
           </Routes>      
        <Footer/>
