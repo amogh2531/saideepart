@@ -3,6 +3,8 @@ import { useParams, useNavigate } from "react-router-dom"
 import {useDispatch, useSelector} from "react-redux";
 import { useEffect } from "react";
 import { listCourseDetails } from "../actions/CoursesActions";
+import Loader from "../Components/Loader";
+import Message from "../Components/Message";
 
 
  const CoursePage = () => {
@@ -33,10 +35,13 @@ import { listCourseDetails } from "../actions/CoursesActions";
   return (
     <Flex mt='20' flexDir='column' justifyContent='center' alignItems='center' p='2'  bgGradient='linear(gray.200 0%, gray.400 25%, gray.500 50%)'  >
         <Button alignSelf='start' mb='2' m='2' onClick={()=> navigate(-1)}>Go Back</Button>
-            {course ? <Flex justifyContent='center' alignItems='center' flexDir='column'>
+        {loading ? 
+            <Loader/> :
+            error ? 
+            <Message>{error}</Message> : course ? <Flex justifyContent='center' alignItems='center' flexDir='column'>
             <Heading as='h2' mb='2' p='2'>{course.name}</Heading>
             <Divider/>
-            <Image src="" alt={course.name} p='2' m='2'></Image>
+            <Image src={course.imageUrl} alt={course.name} p='2' m='2' h='300'></Image>
             <Text m='2' p='2' w='80%' fontSize='xl' textAlign='justify'>{course.description}</Text>
             <Text m='2' p='2' fontSize='xl'><b>Course Format: </b>{course.format}</Text>
             <Text m='2' p='2' fontSize='xl'><b>Course Duration: </b>{course.duration}</Text>

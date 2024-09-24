@@ -33,9 +33,9 @@ import { listCourses } from "../actions/CoursesActions";
             : courses ? ( 
                <Flex justifyContent='center' alignItems='center' flexWrap='wrap'>
                { courses.map((course) => (
-                    <Card w='80' h='650' p='3' m='3'bgGradient="linear(to-t, whiteAlpha.500, gray.200 )">
+                    <Card w='80' h='700' p='3' m='3'bgGradient="linear(to-t, whiteAlpha.500, gray.200 )">
                       <CardBody>
-                        <Image src="/images/img1.jpg" alt={course.name} borderRadius='10px'></Image>
+                        <Image src={course.imageUrl} alt={course.name} borderRadius='10px'></Image>
                         <Stack>
                           <Heading as='h6' fontSize='xl'mb='2' mt='2' p='2'>{course.name}</Heading>
                           <Text overflow='hidden' h='150' >{course.description}</Text>

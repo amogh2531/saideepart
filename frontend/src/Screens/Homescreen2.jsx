@@ -10,11 +10,14 @@ import {
     CardBody,
     Stack,
     Divider,
+    Grid, 
+    GridItem
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { products } from "../Data/product";
+import ImageGallery from "../Components/ImageGallery";
 
-const Homescreen = () => {
+const Homescreen2 = () => {
     const [current, setCurrent] = useState(0);
     const [product, setProduct] = useState(products[0]);
 
@@ -60,7 +63,7 @@ const Homescreen = () => {
                 alignItems='center'
                 flexDir='column'
             >
-                <Text
+                {/* <Text
                     background='rgba(0, 0, 0, 0.7)'
                     color='white'
                     padding='10px'
@@ -69,13 +72,14 @@ const Homescreen = () => {
                     fontSize='lg'
                 >
                     {product.description}
-                </Text>
+                </Text> */}
             </Box>
             <Divider/>
-            <Box margin='1rem' width='90%' height='30rem' >
+            <Box margin='1rem' width='90%' height={{base:'20rem',lg:'30rem'}} overflow='hidden' >
                 <Box  rounded='10px' height='full' padding='3px'>
-                    <Heading fontSize='xx-large' mb='2' textAlign='center' p='2'>About </Heading>
-                    <Text textAlign='justify' fontSize='xl'> 
+                    <Heading fontSize='xx-large' mb='2' textAlign='center' p='2'> About </Heading>
+                    <Text textAlign='justify'  fontSize={{ base: 'sm', md: 'md', lg: 'xl' }} >
+                               
                         My name is <b>Saideep Phadke</b> , and I am a self-taught artist with a deep passion for creating and sharing art. Over the years, I have participated in two online and six offline international art exhibitions across five vibrant cities, including Pune, Delhi, Bhubaneswar, Dehradun, and Goa. These experiences have allowed me to connect with diverse audiences and showcase my work, resulting in the sale of over 200 functional art pieces. Recently, I achieved a significant milestone by selling a painting for ₹20,000, which has further fueled my creative journey.
 
                         I primarily work with mediums such as acrylics, resin art, and alcohol inks, each offering unique possibilities for expression. My artistic repertoire includes a variety of categories, including Warli painting, Lippan art, paper sculpture, and clay miniatures. Each of these forms allows me to explore different cultural influences and techniques, enriching my overall artistic practice.
@@ -86,7 +90,7 @@ const Homescreen = () => {
                 </Box>
             </Box>
             <Divider/>
-            <Box margin='1rem' padding='2px' width='100%' textAlign='start' pb='4' mb='4' mt='2'>
+            {/* <Box margin='1rem' padding='2px' width='100%' textAlign='start' pb='4' mb='4' mt='2'>
                 <Heading fontSize='xx-large' textAlign='center' mb='4' pb='4' mt='4'>
                     Art Categories We Deal With..
                 </Heading>
@@ -103,9 +107,9 @@ const Homescreen = () => {
                         </Card>
                     ))}
                 </Flex>
-            </Box>
-            <Divider/>
-            <Box margin='1rem' padding='3px' width='100%' textAlign='start' pb='4' mb='4'>
+            </Box> */}
+            {/* <Divider/> */}
+            {/* <Box margin='1rem' padding='3px' width='100%' textAlign='start' pb='4' mb='4'>
                 <Heading fontSize='xx-large' textAlign='center' mb='4' pb='4' mt='4'>
                    Courses we offer..
                 </Heading>
@@ -122,9 +126,18 @@ const Homescreen = () => {
                         </Card>
                     ))}
                 </Flex>
+            </Box> */}
+            <Box margin='1rem' padding='2px' width='100%' textAlign='start' pb='4' mb='4' mt='2'>
+                <Heading fontSize='xx-large' textAlign='center' fontStyle='italic' mb='4' pb='4' mt='4'>
+                    Image Gallery
+                </Heading>
+                <Flex  mb='5' justifyContent='center' alignItems='center'>
+                    <ImageGallery/>
+                    
+                </Flex>
             </Box>
         </Flex>
     );
 };
 
-export default Homescreen;
+export default Homescreen2;

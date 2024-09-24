@@ -1,4 +1,4 @@
-import { SET_COURSES, SET_COURSE_DETAILS } from "../constants/courseConstants";
+
 import { COURSE_LIST_SUCCESS,COURSE_LIST_FAIL,COURSE_LIST_REQUEST,COURSE_DETAILS_FAIL,COURSE_DETAILS_REQUEST,COURSE_DETAILS_SUCCESS } from "../constants/courseConstants";
 
 export const courseReducer = (state = {courses : [] }, action) => {

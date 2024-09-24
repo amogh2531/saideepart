@@ -4,6 +4,7 @@ export const courses = [
     {
       id: 1,
       name: "Fluid Art Course",
+      imageUrl: "/images/p6.jpg",
       description: "Learn the vibrant techniques of acrylic pouring to create stunning abstract designs. This hands-on course covers color mixing and layering, perfect for artists of all levels. You'll leave with unique artwork and newfound confidence.",
       duration: "4 weeks (2 hours per week)",
       price: "₹9,600",
@@ -13,6 +14,7 @@ export const courses = [
     {
       id: 2,
       name: "Resin Art Course",
+      imageUrl: "/images/r4.jpg",
       description: "Master the art of resin in this engaging course. Participants will learn to mix, color, and pour epoxy resin to create beautiful pieces like coasters and jewelry. Emphasis is on safety and various creative techniques.",
       duration: "3 weeks (3 hours per week)",
       price: "₹12,000",
@@ -22,6 +24,7 @@ export const courses = [
     {
       id: 3,
       name: "Abstract Painting Course",
+      imageUrl: "/images/p5.jpg",
       description: "Unleash your creativity with abstract painting techniques that focus on color, shape, and form. This course guides you through projects to develop your artistic voice, suitable for all skill levels.",
       duration: "5 weeks (2 hours per week)",
       price: "₹11,200",
@@ -31,6 +34,7 @@ export const courses = [
     {
       id: 4,
       name: "Alcohol Ink Painting Course",
+      imageUrl: "/images/p1.jpg",
       description: "Explore the dynamic medium of alcohol ink painting. Learn to create fluid designs on various surfaces while mastering blending techniques. This course offers endless possibilities for creative expression.",
       duration: "2 weeks (2.5 hours per week)",
       price: "₹7,200",
@@ -40,6 +44,7 @@ export const courses = [
     {
       id: 5,
       name: "Wall Painting Course",
+      imageUrl: "/images/wall2.jpg",
       description: "This unique course teaches large-scale mural techniques for both indoor and outdoor settings. Covering planning and execution, you'll learn how to bring your creative visions to life through mural art.",
       duration: "6 weeks (3 hours per week)",
       price: "₹16,000",
@@ -49,6 +54,7 @@ export const courses = [
     {
       id: 6,
       name: "Mithai Candle Making Course",
+      imageUrl: "/images/mt2.jpg",
       description: "Discover the art of candle making inspired by traditional Indian sweets. Participants will create unique candles while learning about wax selection, coloring, and scenting, perfect for home decor.",
       duration: "3 weeks (2 hours per week)",
       price: "₹6,400",
@@ -58,6 +64,7 @@ export const courses = [
     {
       id: 7,
       name: "Watercolor Painting Course",
+      imageUrl: "/images/p7.jpg",
       description: "Learn essential watercolor techniques in this introductory course. Participants will explore methods like wet-on-wet and layering to create beautiful effects while developing a personal artistic style.",
       duration: "4 weeks (2 hours per week)",
       price: "₹8,800",
@@ -67,12 +74,33 @@ export const courses = [
     {
       id: 8,
       name: "Digital Art Course",
+      imageUrl: "/images/p1.jpg",
       description: "Delve into digital art using modern tools and software. This course covers drawing techniques and color application, helping aspiring artists create illustrations and animations in a digital format.",
       duration: "5 weeks (2.5 hours per week)",
       price: "₹13,000",
       format: "Online only",
       materialsIncluded: "Access to software tutorials and resources",
     },
+    {
+      id: 9,
+      name: "Acrylic Rangoli Course",
+      imageUrl: "/images/rg1.jpg", 
+      description: "Learn the art of creating beautiful rangoli designs using acrylics. This course covers techniques, color blending, and design principles to create stunning decorations for festivals and special occasions.",
+      duration: "4 weeks (2 hours per week)",
+      price: "₹10,000",
+      format: "Online and Offline",
+      materialsIncluded: "Acrylic paints, brushes, and design templates",
+    },
+    {
+      id: 10,
+      name: "Clay Miniatures Course",
+      imageUrl: "/images/m1.jpg", 
+      description: "Master the craft of clay miniatures in this hands-on course. Participants will learn shaping, painting, and finishing techniques to create unique and detailed miniatures.",
+      duration: "6 weeks (2 hours per week)",
+      price: "₹12,000",
+      format: "Offline only",
+      materialsIncluded: "Clay, tools, and painting supplies",
+    }
   ]
   
   export default courses;
