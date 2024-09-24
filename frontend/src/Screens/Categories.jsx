@@ -40,11 +40,6 @@ const Categories = () => {
                                     {category.description}
                                 </Text>
                         </Flex>
-                        
-                        <Flex mt='3' mb='3'>
-                            <Heading as='h6' fontSize='xl'>Work Samples:</Heading>
-                            <Flex></Flex>
-                        </Flex>
                         <Divider/>
                     </Flex>
                     ))
