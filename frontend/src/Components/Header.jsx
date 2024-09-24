@@ -27,7 +27,7 @@ export default function Header() {
             {/*Logo*/}
             <Box display='flex'>
                 <Link as={RouterLink} to="/" _hover={{textDecor: 'none', color: 'gray.500'}} mr='2'>
-                    <Image boxSize='50px' rounded='full' objectFit='cover' src="./public/images/logo.png" alt="logo" />
+                    <Image boxSize='50px' rounded='full' objectFit='cover' src="/images/logo.png" alt="logo" />
                 </Link>
             </Box>
 
