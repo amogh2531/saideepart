@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
-import Homescreen from './Screens/Homescreen2'
+import Homescreen from './Screens/Homescreen'
 import  Categories  from './Screens/Categories'
 import  Courses  from './Screens/Courses'
 import CoursePage from './Screens/CoursePage'
