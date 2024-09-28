@@ -1,5 +1,6 @@
 import { Flex, Box, Heading, Link, Icon, Text} from '@chakra-ui/react'
 import { FaInstagram, FaFacebookSquare, FaYoutube  } from "react-icons/fa";
+import {Link as RouterLink} from "react-router-dom"
 import React from 'react'
 
 export default function Footer() {
@@ -10,20 +11,20 @@ export default function Footer() {
             <Box ml='3'>
               <Text fontSize='lg' color='blackAlpha.900'>Quick Links</Text>
                <Flex flexDir='column' justifyContent='center' alignItems='center'>
-               <Link fontSize='sm' href='/'>Home</Link>
-               <Link fontSize='sm' href='/categaries'>Categories</Link>
-               <Link fontSize='sm' href='/courses'>Courses</Link>
+               <Link as={RouterLink} fontSize='sm' to='/'>Home</Link>
+               <Link as={RouterLink} fontSize='sm' to='/categaries'>Categories</Link>
+               <Link  as={RouterLink} fontSize='sm' to='/courses'>Courses</Link>
                </Flex>
             </Box>
             
             <Box mr='3'  >
-              <Link isExternal color='black' textDecoration='none' mr='3' href='https://www.instagram.com/saideepart?igsh=MWU3Z2R2NzRyZWVwbw==' >
+              <Link as={RouterLink} isExternal color='black' textDecoration='none' mr='3' to='https://www.instagram.com/saideepart?igsh=MWU3Z2R2NzRyZWVwbw==' >
               <Icon color='black' fontWeight='bold' fontSize='2xl' textColor='white'  _hover={{color:"gray.900"}}><FaInstagram/></Icon>
               </Link>
-              <Link color='black'  textDecoration='none' mr='3' isExternal >
+              {/* <Link as={RouterLink} color='black'  textDecoration='none' mr='3' isExternal >
               <Icon color='black' fontSize='2xl'  textColor='white'  _hover={{color:"gray.900"}}><FaFacebookSquare/></Icon>
-              </Link>
-              <Link color='black' textDecoration='none' mr='3' href='http://www.youtube.com/@saideepart6403' isExternal >
+              </Link> */}
+              <Link as={RouterLink} color='black' textDecoration='none' mr='3' to='http://www.youtube.com/@saideepart6403' isExternal >
               <Icon color='black' fontSize='2xl' textColor='white'  _hover={{color:"gray.900"}}><FaYoutube /></Icon>
               </Link>
             </Box>
